@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/selected_count"
+    <GridView
+        android:id="@+id/grid_v2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Selected: 0"
-        android:textSize="18sp" />
+        android:numColumns="2"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:gravity="center" />
 
     <ListView
-        android:id="@+id/list_view"
+        android:id="@+id/list_v2"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:choiceMode="multipleChoice" />
+        android:layout_height="wrap_content"
+        android:dividerHeight="8dp" />
 </LinearLayout>
